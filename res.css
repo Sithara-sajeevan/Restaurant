@@ -1,0 +1,217 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+}
+.container{
+    width: 100%;
+    height: 100vh;/* 1vh=19.2 */
+    position: relative;
+    
+}
+.navbar{
+    display: flex;/*side by side*/
+    justify-content: space-between;/*to create space bw logo and list */
+    width: 85%;
+    margin-left: 100px;
+    align-items: center;/* it move vertically to the center*/ 
+}
+
+.listitem{
+    display: inline-block;/*seperate lines to one single line*/
+    list-style: none; /*to remove . */
+    margin: 20px 20px;
+    scroll-behavior: smooth;
+   
+}
+.links{
+    text-decoration: none; /*to remove underline*/
+    font-weight: bold;
+}
+.links:hover /* to change the property */
+{
+    color: brown; 
+}
+#HOME{
+    margin: 18% 8% 0px 8%;
+ 
+}
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.hed{
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.h{
+    margin-left: 120px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+}
+.title-image{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.title-image img
+{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform:translateX(-50%);
+    transition: bottom 1s,left 2s;
+}
+#about{
+    margin: 18% 8% 0px 8%;
+
+}
+
+.heading{
+    text-align: center;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;  /* 1rem=16px*/
+    margin-top: 2rem;
+}
+.about-details{
+    font-size: 19px;
+    font-weight: 400;
+    text-align: justify;
+}
+.about-img img{
+        width: 550px;
+        height: 500px;
+        border-radius: 2rem;
+    
+}
+#menu{
+    margin: 18% 8% 0px 8%;
+ 
+    
+}
+.heading{
+    text-align: center;
+
+}
+.wrapper{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    padding: 20px;
+    margin-left: 120px;
+}
+
+.card{
+    width: 450px;
+    height: 350px;
+    padding:2rem 1rem ;
+    background:rgb(8, 8, 8);
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 20px 20px;
+    border-radius: 20px;
+}
+.card :hover{
+    transform: translateY(20px);
+
+}
+.card:before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+display: block;
+width: 100%;
+height: 100%;
+transition: 0.5s all;
+opacity: 0;
+}
+.card:hover:before{
+    opacity: 1;
+}
+.card img{
+    margin-top: 50px;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.or{
+    padding: 50px; 
+    margin-left: 400px;
+    font-size: 30px;
+    text-decoration: none;
+font-weight: bold;
+}
+.h{
+    margin-left: 120px;
+}
+#contact{
+    margin: 18% 8% 0px 8%;
+}
+
+.icon-set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px ;
+    margin-bottom: 20px;
+    display: flex;
+}
+.icon i{
+    font-size: 30px;
+    color: white;
+}
+.icon:hover {
+    background-image: linear-gradient(to bottom right, rgb(28, 28, 26) , rgb(66, 24, 24));
+
+}
+.icon:hover i {
+    color: rgb(175, 153, 153);
+    animation: shake 0.75s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
